@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/style.css">
     <title>Character List</title>
   </head>
-  <body class="bg-red-500">
-    <h1 class="text-center bg-red-200">Character Manager</h1>
-    <div class="max-w-2x1 mx-auto px-4 py-8 lg:max-w-7x1 grid grid-col-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-      <div class="">
-        <img src="./img/fox.jpg" alt="fox" class="">
-        <h2 class="">Lorem ipsum</h2>
-        <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure porro corporis hic vero cum nisi voluptates possimus praesentium dignissimos, deserunt, tenetur rem enim quae perferendis pariatur, sint labore. Quod, alias?</p>
-        <a href="" class="">See character</a>
+  <body class="bg-primary font-marvel">
+    <h1 class="text-center texte-5xl font-bold m-6">Character Manager</h1>
+    <div class="max-w-fit mx-10 py-8 lg:max-w-fit grid grid-col-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div class="font-marvel flex flex-col bg-slate-900 rounded p-5 shadow-lg shadow-cyan-700">
+        <img class="h-24 m-1.5 max-w-min mr-auto ml-auto shadow-xl shadow-cyan-700 rounded-full" src="./img/fox.jpg" alt="fox">
+        <h2 class="m-2 mt-5 text-left text-white">Lorem ipsum</h2>
+        <p class="m-2 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure porro corporis hic vero cum nisi voluptates possimus praesentium dignissimos, deserunt, tenetur rem enim quae perferendis pariatur, sint labore. Quod, alias?</p>
+        <a href="" class="animate-bounce w-2/4 m-2 mt-5 text-center bg-gradient-to-r from-green-500 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white rounded-lg">See character</a>
       </div>
     </div>
     <a href="./public/htmlPages/createCharacter.html" target="_blank" rel="noopener noreferrer">Create character</a>
