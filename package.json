@@ -10,6 +10,7 @@
     "compile": "sass --watch --no-source-map public/scss/style.scss style.css"
   },
   "devDependencies": {
+    "tailwindcss": "^3.2.2",
     "vite": "^3.2.3"
   },
   "dependencies": {
