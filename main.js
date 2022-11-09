@@ -5,9 +5,14 @@ import { divConstructor } from "./public/js/constructorDOM"
 import { goFetchAllAsync } from "./public/js/apiRequests"
 import axios from "axios"
 
+const justGiveMeAFreakingFunctionSiVouPlait = async() =>{
+  let charList = await goFetchAllAsync();
 
-let charList = await goFetchAllAsync();
-
-for (const iterator of charList) {
-  divConstructor(iterator);
+  for (const iterator of charList) {
+    divConstructor(iterator);
+  }
+  
 }
+
+
+justGiveMeAFreakingFunctionSiVouPlait()
