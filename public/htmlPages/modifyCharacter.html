@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/style.css">
     <title>Character Modifier</title>
 </head>
-<body>
-    <textarea name="urlImg" id="urlImg" cols="30" rows="10"></textarea>
-    <input type="text" name="name" id="name">
-    <input type="text" name="shortDescription" id="shortDescription">
-    <textarea name="description" id="description" cols="30" rows="10"></textarea>
-    <button id="modBtn">Modification!</button>
-
+<body class="bg-primary h-full">
+    <header class= "flex flex-row justify-between items-center border-b-2 border-cyan-700 m-10" >
+        <h1 class="text-3xl font-bold text-cyan-700 mb-1">Character Manager</h1>
+    </header>
+    <main>
+        <div class="font-marvel flex flex-col justify-center items-center bg-slate-900 rounded p-5 m-10 shadow-lg shadow-cyan-700">
+            <textarea name="urlImg" id="urlImg" cols="30" rows="10" class="h-24 m-1.5 max-w-min mr-auto ml-auto shadow-xl shadow-cyan-700 rounded-full"></textarea>
+            <input type="text" name="name" id="name" class="">
+            <input type="text" name="shortDescription" id="shortDescription" class="">
+            <textarea name="description" id="description" cols="30" rows="10" class=""></textarea>
+            <button id="modBtn" class="animate-bounce w-fit p-1 m-2 mt-5 text-center bg-gradient-to-r from-green-500 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white rounded-lg">Save changes</button>
+            <button class="animate-bounce w-fit p-1 m-2 mt-5 text-center bg-gradient-to-r from-red-600 to-red-900 hover:from-orange-600 hover:to-black text-white rounded-lg">Delete</button>
+        </div>
+    </main>
     <script type="module" src="./../js/modifyCharacter.js"></script>
 </body>
 </html>
