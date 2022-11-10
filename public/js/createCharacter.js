@@ -1,5 +1,4 @@
-import { goFetchAllAsync, goFetchOneAsync, sendLetterAsync } from "./apiRequests"
-import axios from "axios"
+import { sendLetterAsync } from "./apiRequests"
 
 let createCharBtn = document.querySelector("#createBtn");
 createCharBtn.addEventListener("click",async () => {
