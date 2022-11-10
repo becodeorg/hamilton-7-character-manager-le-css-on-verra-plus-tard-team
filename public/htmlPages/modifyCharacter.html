@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../dist/style.css">
     <title>Character Modifier</title>
 </head>
-<body>
-    <div id="cardContainer">
-        <textarea name="urlImg" id="urlImg" cols="30" rows="10"></textarea>
-        <input type="text" name="name" id="name">
-        <input type="text" name="shortDescription" id="shortDescription">
-        <textarea name="description" id="description" cols="30" rows="10"></textarea>
-        <button id="modBtn">Modification!</button> 
-    </div>
+<body class="bg-primary h-full">
+    <header class= "flex flex-row justify-between items-center border-b-2 border-cyan-700 m-10" >
+        <h1 class="text-3xl font-bold text-cyan-700 mb-1">Character Manager</h1>
+    </header>
+    <main>
+        <div class="font-marvel flex flex-col justify-between items-center bg-slate-900 rounded p-5 m-10 shadow-lg shadow-cyan-700">
+            <textarea name="urlImg" id="urlImg" cols="30" rows="10" class="w-11/12 font-marvel bg-primary p-2 caret-cyan-700 rounded focus:outline-none focus:border-2 focus:border-cyan-700"></textarea>
+            <input type="text" name="name" id="name" class="bg-primary w-full">
+            <input type="text" name="shortDescription" id="shortDescription" class="bg-primary w-full">
+            <textarea name="description" id="description" cols="30" rows="10" class="bg-primary w-full"></textarea>
+            <div class="flex flex-row justify-between">
+                <button id="modBtn" class="animate-bounce w-fit p-2 m-2 mt-5 text-center bg-gradient-to-r from-green-500 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white rounded-lg">Save changes</button>
+                <button class="animate-bounce w-fit p-2 m-2 mt-5 text-center bg-gradient-to-r from-red-600 to-red-900 hover:from-orange-600 hover:to-black text-white rounded-lg">Delete</button>
+            </div>
+        </div>
+    </main>
     <script type="module" src="./../js/modifyCharacter.js"></script>
 </body>
 </html>
