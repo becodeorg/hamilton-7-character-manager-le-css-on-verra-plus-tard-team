@@ -5,8 +5,6 @@ import { goFetchOneAsync } from "./apiRequests"
 const singleCharacter = async() =>{
     const urlParams = new URLSearchParams(window.location.search);
     const idValue = urlParams.get('id');
-    console.log(idValue);
-
     let character = await goFetchOneAsync(idValue);
     divConstructor(character);
     let newABack = document.querySelector("a");
