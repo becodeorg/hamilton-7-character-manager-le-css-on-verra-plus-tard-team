@@ -21,9 +21,9 @@ export function divConstructor(character) {
     newDiv.classList.add("font-marvel", "flex", "flex-col", "bg-slate-900", "rounded", "p-5", "shadow-lg", "shadow-cyan-700");
     newImg.classList.add("h-24", "m-1.5", "max-w-min", "mr-auto", "ml-auto", "shadow-xl", "shadow-cyan-700", "rounded-full");
     newH.classList.add("m-2", "mt-5", "text-left", "text-white");
-    newDesc.classList.add("m-2", "text-white");
+    newDesc.classList.add("m-2", "h-28", "text-white", "truncate");
     newA.classList.add("animate-bounce", "w-2/4", "m-2", "mt-5", "text-center", "bg-gradient-to-r", "from-green-500", "to-blue-500", "hover:from-pink-500", "hover:to-yellow-500", "text-white", "rounded-lg");
-    newDelBtn.classList.add("animate-bounce", "w-fit", "p-2", "m-2", "mt-5", "text-center", "bg-gradient-to-r", "from-red-600", "to-red-900", "hover:from-orange-600", "hover:to-black", "text-white", "rounded-lg");
+    newDelBtn.classList.add("animate-bounce", "w-1/4", "m-2", "mt-5", "text-center", "bg-gradient-to-r", "from-red-600", "to-red-900", "hover:from-orange-600", "hover:to-black", "text-white", "rounded-lg");
     btnDiv.classList.add("flex", "flex-row", "justify-between");
     newDiv.appendChild(newImg);
     newDiv.appendChild(newH);
