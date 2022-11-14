@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
               "./index.html",
@@ -22,5 +23,5 @@ module.exports = {
         'marvel': ["Marvel", "sans-serif"] 
       },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/line-clamp')],
 }
