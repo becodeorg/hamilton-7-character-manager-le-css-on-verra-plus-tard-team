@@ -7,9 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    
     <script src="https://kit.fontawesome.com/c73011fb05.js" crossorigin="anonymous"></script>
     <title>Character List</title>
+    <script type="module" crossorigin src="/assets/main.cb9d699b.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/apiRequests.6cdff860.js">
+    <link rel="modulepreload" crossorigin href="/assets/constructorDOM.5a0a754d.js">
+    <link rel="stylesheet" href="/assets/apiRequests.93d0493a.css">
   </head>
   <body class="bg-primary h-full">
     <header>
@@ -21,12 +25,12 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="overflow-auto">
       <div id="cardContainer" class="max-w-fit m-10 lg:max-w-fit grid grid-col-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <div class="font-marvel flex flex-col bg-slate-900 rounded p-5 shadow-lg shadow-cyan-700">
-          <img class="h-24 m-1.5 max-w-min mr-auto ml-auto shadow-xl shadow-cyan-700 rounded-full" src="./img/fox.jpg" alt="fox">
+          <img class="h-24 m-1.5 max-w-min mr-auto ml-auto shadow-xl shadow-cyan-700 rounded-full" src="/assets/fox.2cddf934.jpg" alt="fox">
           <h2 class="m-2 mt-5 text-left text-white">Lorem ipsum</h2>
-          <p class="m-2 h-28 text-white truncate ...">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure porro corporis hic vero cum nisi voluptates possimus praesentium dignissimos, deserunt, tenetur rem enim quae perferendis pariatur, sint labore. Quod, alias?
+          <p class="m-2 h-28 text-white text-ellipsis overflow-hidden ...">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure porro corporis hic vero cum nisi voluptates possimus praesentium dignissimos, deserunt, tenetur rem enim quae perferendis pariatur, sint labore. Quod, alias?
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure porro corporis hic vero cum nisi voluptates possimus praesentium dignissimos, deserunt, tenetur rem enim quae perferendis pariatur, sint labore. Quod, alias?
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure porro corporis hic vero cum nisi voluptates possimus praesentium dignissimos, deserunt, tenetur rem enim quae perferendis pariatur, sint labore. Quod, alias?
           </p>
@@ -40,6 +44,6 @@
     <div class="flex justify-center m-9">
       <a href="./public/htmlPages/createCharacter.html" target="_blank" rel="noopener noreferrer" class="w-fit p-3 text-center bg-gradient-to-r from-green-500 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white rounded-lg">Add a new character to the collection</a>
     </div>
-    <script type="module" src="/main.js"></script>
+    
   </body>
 </html>
