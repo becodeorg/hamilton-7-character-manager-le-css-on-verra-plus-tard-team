@@ -23,5 +23,5 @@ module.exports = {
         'marvel': ["Marvel", "sans-serif"] 
       },
   },
-  plugins: [require('@tailwindcss/line-clamp')],
+  // plugins: [require('@tailwindcss/line-clamp')],
 }
