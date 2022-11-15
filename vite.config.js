@@ -6,9 +6,9 @@ module.exports = defineConfig({
     rollupOptions: {
       input: {
         main: "./index.html",
-        new: "./character-creation.html",
-        view: "./single-character.html",
-        edit: "./character-editor.html",
+        new: "./public/htmlPages/createCharacter.html",
+        view: "./public/htmlPages/singleCharacter.html",
+        edit: "./public/htmlPages/modifyCharacter.html",
       },
     },
     target: 'esnext'
