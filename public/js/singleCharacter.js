@@ -22,7 +22,7 @@ const singleCharacter = async() =>{
     newABack.href = "../../index.html";
     let cardBtns = document.querySelector("#cardBtns");
     cardBtns.classList.remove("justify-between");
-    cardBtns.classList.add("w-full", "justify-around");
+    cardBtns.classList.add("w-full", "justify-center");
     cardBtns.appendChild(newAMod);
     
 }
