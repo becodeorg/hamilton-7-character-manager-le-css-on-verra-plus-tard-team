@@ -21,7 +21,7 @@ const singleCharacter = async() =>{
     newABack.target = "";
     newABack.href = "../../index.html";
     let cardBtns = document.querySelector("#cardBtns");
-    cardBtns.classList.remove("justify-between");
+    cardBtns.classList.remove("justify-around");
     cardBtns.classList.add("w-full", "justify-center");
     cardBtns.appendChild(newAMod);
     

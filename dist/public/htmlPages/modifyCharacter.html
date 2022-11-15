@@ -19,14 +19,14 @@
     </header>
     <main>
         <div class="font-marvel flex flex-col justify-between items-center bg-slate-900 rounded p-5 m-10 shadow-lg shadow-cyan-700">
-            <input type="file" name="image" id="image">
             <div id="preview"></div>
+            <label for="image" class="w-fit p-2 m-2 mt-5 bg-gradient-to-r from-green-500 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white text-base rounded-lg hover:cursor-pointer md:px-4 md:text-lg">Change the picture<input type="file" name="image" id="image" class="opacity-0 w-0"></label>
             <input type="text" name="name" id="name" class="bg-gray-200 w-full m-3 font-marvel text-slate-900 p-2 caret-cyan-700 rounded focus:outline-none focus:border-2 focus:border-cyan-700 ">
             <input type="text" name="shortDescription" id="shortDescription" class="bg-gray-200 w-full m-3 rounded font-marvel text-slate-900 p-2 caret-cyan-700 focus:outline-none focus:border-2 focus:border-cyan-700">
             <textarea name="description" id="description" cols="30" rows="10" class="bg-gray-200 w-full m-3 rounded font-marvel text-slate-900 p-2 caret-cyan-700 focus:outline-none focus:border-2 focus:border-cyan-700"></textarea>
             <div class="flex flex-row justify-between">
                 <button id="modBtn" class="animate-bounce w-fit p-2 m-2 mt-5 text-center bg-gradient-to-r from-green-500 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white rounded-lg">Save changes</button>
-                <button class="animate-bounce w-fit p-2 m-2 mt-5 text-center bg-gradient-to-r from-red-600 to-red-900 hover:from-orange-600 hover:to-black text-white rounded-lg">Delete</button>
+                <button class="animate-bounce w-fit p-2 m-2 mt-5 text-center bg-gradient-to-r from-red-600 to-red-900 hover:from-orange-600 hover:to-black text-white rounded-lg">DELETE</button>
             </div>
         </div>
     </main>

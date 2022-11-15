@@ -22,9 +22,9 @@ export function divConstructor(character) {
     newImg.classList.add("h-24", "m-1.5", "max-w-min", "mr-auto", "ml-auto", "shadow-xl", "shadow-cyan-700", "rounded-full");
     newH.classList.add("m-2", "mt-5", "text-left", "text-white");
     newDesc.classList.add("m-2", "h-28", "text-white", "text-ellipsis", "overflow-hidden", "...");
-    newA.classList.add("animate-bounce", "w-2/4", "m-2", "mt-5", "text-center", "bg-gradient-to-r", "from-green-500", "to-blue-500", "hover:from-pink-500", "hover:to-yellow-500", "text-white", "rounded-lg");
+    newA.classList.add("animate-bounce", "w-fit", "px-2", "py-1", "m-2", "mt-5", "text-center", "bg-gradient-to-r", "from-green-500", "to-blue-500", "hover:from-pink-500", "hover:to-yellow-500", "text-white", "rounded-lg");
     newDelBtn.classList.add("animate-bounce", "w-fit", "px-2", "py-1", "m-2", "mt-5", "text-center", "bg-gradient-to-r", "from-red-600", "to-red-900", "hover:from-orange-600", "hover:to-black", "text-white", "rounded-lg");
-    btnDiv.classList.add("flex", "flex-row", "justify-between");
+    btnDiv.classList.add("flex", "flex-row", "justify-around");
     newDiv.appendChild(newImg);
     newDiv.appendChild(newH);
     newDiv.appendChild(newDesc);
