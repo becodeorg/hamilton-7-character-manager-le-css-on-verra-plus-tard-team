@@ -1,16 +1,15 @@
-const { resolve } = require("path");
-const { defineConfig } = require("vite");
+import { resolve } from 'path'
+import { defineConfig } from 'vite'
 
-module.exports = defineConfig({
+export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: "./index.html",
-        new: "./public/htmlPages/createCharacter.html",
-        view: "./public/htmlPages/singleCharacter.html",
-        edit: "./public/htmlPages/modifyCharacter.html",
-      },
-    },
-    target: 'esnext'
-  },
-});
+        main: resolve(__dirname, 'index.html'),
+        singleCharacter: resolve(__dirname, "public", "htmlPages", "singleCharacter.html"),
+        modifyCharacter: resolve(__dirname, "public", "htmlPages", "modifyCharacter.html"),
+        createCharacter: resolve(__dirname, "public", "htmlPages", "createCharacter.html")
+      }
+    }
+  }
+})
